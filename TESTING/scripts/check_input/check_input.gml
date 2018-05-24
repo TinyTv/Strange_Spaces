@@ -1,7 +1,6 @@
 if (state != states.move and state != states.dash and state != states.attack and state != states.incapacitated) //if state is not move or dash, check if a key is pressed:
 	{
 	
-		
 	//Player Movement right
 	if (keyboard_check_pressed(ord("D")))
 	{
@@ -70,8 +69,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		{
 			state = states.attack;
 		}
-	
-		
+			
 		
 	//Player ability Dash 
     if (keyboard_check_pressed(vk_shift))
@@ -157,8 +155,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 				hsp = 0;
 				vsp = 0; 
 				
-			}
-			
+			}			
 	}
 			
 	//Collision with oHazard block kills the player 
