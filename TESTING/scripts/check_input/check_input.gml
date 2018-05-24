@@ -72,7 +72,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 			
 		
 	//Player ability Dash 
-    if (keyboard_check_pressed(vk_shift))
+    if (keyboard_check_pressed(vk_shift) and (global.dashCharge > 0))
     {
 
         var tempDashDistance = dashDistance;
@@ -122,8 +122,13 @@ if (state != states.move and state != states.dash and state != states.attack and
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
-        return;
-		        
+		
+		global.dashCharge -= 1;
+		
+		if(global.dashCharge < 3)
+		{
+			alarm[0] = 60;
+		}     
     }
 		
 	//Collisions for normal movement		
