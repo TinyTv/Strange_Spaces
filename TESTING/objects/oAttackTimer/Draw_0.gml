@@ -1,0 +1,1 @@
+draw_text(10,10,"attack Timer:" + string(global.canAttack))
