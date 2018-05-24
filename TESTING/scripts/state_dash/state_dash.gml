@@ -43,6 +43,7 @@ if(hsp!=0)  //If hsp is NOT 0:
 //If not dashing horizontally, check if we're moving vertically:
 else if(vsp!=0)
 {
+	
 	if ((abs(vsp) - dashSpeed) <= 0)
 	{
 		y += vsp;	

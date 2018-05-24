@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oHazard",
     "eventList": [
-        
+        {
+            "id": "5e11d11c-b350-44ef-b4bd-ef111c2ffaf4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "43a41ed5-a2e9-49c1-9c6c-3d5ad1215094"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

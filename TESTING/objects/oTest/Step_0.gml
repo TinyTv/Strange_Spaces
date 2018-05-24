@@ -1,4 +1,4 @@
-moveSpeed = 10
+moveSpeed = 10;
 
 
 //Snaps the oTest box to the oPlayer coordinates 

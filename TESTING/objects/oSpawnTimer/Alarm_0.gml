@@ -5,3 +5,7 @@ y = round(oSpawn.y / oSpawn.gridSize) * oSpawn.gridSize;
 instance_create_depth(x,y,-2,oPlayer);
 instance_create_depth(x,y,-1,oTest);
 
+if instance_exists(oPlayer)
+{
+	instance_destroy(oSpawnTimer)
+}
