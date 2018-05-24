@@ -298,7 +298,7 @@
             "Key": "4461799e-3911-4ef2-8747-c897de3448b4",
             "Value": {
                 "id": "42c279c8-715e-4809-bca9-e465e4e989fd",
-                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourcePath": "rooms\\ESAtesti\\ESAtesti.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -316,14 +316,6 @@
                 "id": "3f2d7509-f5a2-40b7-879a-265a35ce4aa3",
                 "resourcePath": "objects\\oFallingBlock\\oFallingBlock.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4bf3b007-2126-4a2a-a520-a0e34a8f353c",
-            "Value": {
-                "id": "3e3da1a7-74d6-48ef-978d-0c120d6729e5",
-                "resourcePath": "rooms\\Proto\\Proto.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -716,6 +708,14 @@
                 "id": "e8785b53-d0af-42f6-adcc-c77f159bcbf2",
                 "resourcePath": "views\\bb1a53ea-1b7b-4b7c-9bf2-dfe23df3affc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bb497ee6-f27b-4937-837f-4225d56ba2bd",
+            "Value": {
+                "id": "00a4d7f8-46cc-4c14-92cc-87c0a976803e",
+                "resourcePath": "rooms\\JYRItesti\\JYRItesti.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
