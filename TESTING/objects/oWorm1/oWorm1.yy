@@ -1,5 +1,5 @@
 {
-    "id": "bffde885-d2ea-4465-899f-7b0268d66793",
+    "id": "05b8cba3-710c-4e51-ab3e-e7cdf975aade",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "oWorm1",

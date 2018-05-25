@@ -94,19 +94,20 @@ if (state != states.move and state != states.dash and state != states.attack and
 					break;
 			    } 
 			
-		  }   
+		 }   
 		  
 		//USE THIS CODE FOR DISABLING DASHING THROUGH ENEMIES OR OTHER SOLID OBJECTS
         //Dash collision check for oDmg1 = can't dash through object oDmg1
         for(var i = 0;i<dashDistance;i++)//If i is smaller than Distance = add 1 to i but keep i the same, until i is = to dashDistance.
         {
 			
-			//Worm1 dash collision
+			//Special Worm 1 dash collision
 			if (place_meeting(oTest.x + sign(hsp) + sign(hsp)*(i*gridSize), oTest.y + sign(vsp) + sign(vsp)*(i*gridSize), oWorm1))
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
 			   } 
+			  
 			   
 			   
             //Worm2 dash collision
@@ -116,7 +117,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 					break;
 			   }   		
 			
-		  }  
+		}  
 		  	    
                 
 		//Set hsp and vsp again and dash
@@ -134,33 +135,31 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Collisions for normal movement		
 	if (vsp !=0 or hsp !=0)//If is moving:
 	{
-			//Collision check
-	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
-			{
-				//if colliding, set state to idle and reset horizontal & vertical speeds
-				state = states.idle;
-				hsp = 0;
-				vsp = 0; 
-				
-			}
-			
-	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm1))
-			{
+				//Collision check
+		if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWall))
+				{
 					//if colliding, set state to idle and reset horizontal & vertical speeds
-				state = states.idle;
-				hsp = 0;
-				vsp = 0; 
-				
-			}
+					state = states.idle;
+					hsp = 0;
+					vsp = 0; 	
+				}
 			
-	if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm2))
-			{
-					//if colliding, set state to idle and reset horizontal & vertical speeds
-				state = states.idle;
-				hsp = 0;
-				vsp = 0; 
-				
-			}			
+		if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm1))
+				{
+						//if colliding, set state to idle and reset horizontal & vertical speeds
+					state = states.idle;
+					hsp = 0;
+					vsp = 0; 	
+				}
+			
+			
+		if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oWorm2))
+				{
+						//if colliding, set state to idle and reset horizontal & vertical speeds
+					state = states.idle;
+					hsp = 0;
+					vsp = 0; 	
+				}			
 	}
 			
 	//Collision with oHazard block kills the player 
