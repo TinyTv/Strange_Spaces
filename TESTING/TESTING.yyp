@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "878705d5-dbee-46fe-8179-1f47db89e64f",
+            "Value": {
+                "id": "fe81ea3a-1769-4a5c-9be7-ee3f9ecb24ad",
+                "resourcePath": "views\\878705d5-dbee-46fe-8179-1f47db89e64f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "88fbf469-6a50-4e82-81d5-47fd49109765",
             "Value": {
                 "id": "dfb47dac-9d9e-42d9-a5d8-d404729f225e",
@@ -815,6 +823,14 @@
             }
         },
         {
+            "Key": "b339ca73-8bc4-40ca-b49e-c8dca8a6f51a",
+            "Value": {
+                "id": "06e721e8-b38b-47b4-8d23-86db9bce4a80",
+                "resourcePath": "views\\b339ca73-8bc4-40ca-b49e-c8dca8a6f51a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b6d63850-31c3-4592-b2cb-918aaa22cc8e",
             "Value": {
                 "id": "750d75eb-ab86-4e19-97d5-4fcb2380f1cd",
@@ -964,14 +980,6 @@
                 "id": "4e86ff0b-6dcc-493a-a30c-38b7583111b9",
                 "resourcePath": "scripts\\sprites\\sprites.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "dee332f9-8ae6-42ec-97c8-9c62fac997dc",
-            "Value": {
-                "id": "bae0c3d5-e338-41af-ab49-3257df953c99",
-                "resourcePath": "views\\dee332f9-8ae6-42ec-97c8-9c62fac997dc.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
