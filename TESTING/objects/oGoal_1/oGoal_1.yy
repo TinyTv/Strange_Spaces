@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oGoal_1",
     "eventList": [
-        
+        {
+            "id": "2ffd9bdb-6e05-4873-b844-65909251f88f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "38ada92c-afb5-48c7-8ea3-f5c16557f942"
+        },
+        {
+            "id": "b7b285e8-c41d-4fa9-a357-cf94dff12fef",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "34ee66ff-f09e-4977-b73e-20b6a60bf1e9",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "38ada92c-afb5-48c7-8ea3-f5c16557f942"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

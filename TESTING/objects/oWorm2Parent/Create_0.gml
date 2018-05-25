@@ -1,6 +1,6 @@
 /// @description normal attack Worm
-Worm2Health = 3;
-global.WormAlert2 = false;
+WormHealth2 = 3;
+WormAlert2 = false;
 
 WormAttackLeft = 0;
 WormAttackRight = 0;
