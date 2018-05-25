@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_layer(oFallingBlock.x,oFallingBlock.y,"Instances",oDmg1);
+if (BlockBreaking = 0)
+	{
+		BlockBreaking = 1;
+		alarm[3] = room_speed * 1;
+	}

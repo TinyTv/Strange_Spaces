@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05b8cba3-710c-4e51-ab3e-e7cdf975aade",
+            "Value": {
+                "id": "5739cd9c-a2a6-4426-ad91-65f08c9d0fac",
+                "resourcePath": "objects\\oWorm1\\oWorm1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09d87e13-2c44-41e0-9ef1-a276a87bd330",
             "Value": {
                 "id": "8a5142df-de35-4d36-94eb-497b851513ab",
@@ -236,14 +244,6 @@
                 "id": "4c2bd8e7-361e-4be8-8dc1-51af2fa90dfb",
                 "resourcePath": "sprites\\spPlayer_movement_down\\spPlayer_movement_down.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2efec688-5de0-4cde-890c-2625cef3cbb0",
-            "Value": {
-                "id": "1bf0e715-d474-4bb8-81f4-eba533e47743",
-                "resourcePath": "objects\\oWormBasicTimer\\oWormBasicTimer.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -607,11 +607,11 @@
             }
         },
         {
-            "Key": "9a09c369-c098-4159-acd6-240e2d40fe4f",
+            "Key": "9bc5331b-934a-4b5e-8a62-e16557a6117d",
             "Value": {
-                "id": "d464e5c8-cf4c-4f17-b8f9-e54e1b70d7b7",
-                "resourcePath": "objects\\oWormSpecialTimer\\oWormSpecialTimer.yy",
-                "resourceType": "GMObject"
+                "id": "5a65c20b-5f7e-47b8-8d9c-799eb688b6e7",
+                "resourcePath": "sprites\\spFallingBlockTimer\\spFallingBlockTimer.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -756,14 +756,6 @@
                 "id": "00a4d7f8-46cc-4c14-92cc-87c0a976803e",
                 "resourcePath": "rooms\\JYRItesti\\JYRItesti.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "bffde885-d2ea-4465-899f-7b0268d66793",
-            "Value": {
-                "id": "5ac1b891-e886-464b-8803-21a7d9243838",
-                "resourcePath": "objects\\oWorm1\\oWorm1.yy",
-                "resourceType": "GMObject"
             }
         },
         {

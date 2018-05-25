@@ -1,1 +1,1 @@
-Worm1Health = Worm1Health - 1;
+WormHealth1 = WormHealth1 - 1;
