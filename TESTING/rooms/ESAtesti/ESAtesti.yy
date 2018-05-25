@@ -8,7 +8,8 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "446bd583-5290-4bdd-b297-9c98f6125fe3",
-        "a24ef1b2-169d-4ed9-8e60-35b45d035723"
+        "a24ef1b2-169d-4ed9-8e60-35b45d035723",
+        "6464125f-2cc2-4a63-adf7-9073c408613b"
     ],
     "IsDnD": false,
     "layers": [
@@ -17,8 +18,8 @@
             "name": "Bullets",
             "id": "b792f12c-afa5-4d3e-a40e-1554a4fdebf6",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 80,
+            "grid_y": 80,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -26,7 +27,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_68EC5A07","id": "6464125f-2cc2-4a63-adf7-9073c408613b","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_68EC5A07","objId": "38ada92c-afb5-48c7-8ea3-f5c16557f942","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 480,"y": 240}
             ],
             "layers": [
 

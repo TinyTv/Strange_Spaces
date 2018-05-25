@@ -1,76 +1,80 @@
-if (Worm2Health > 0)
+if (WormHealth2 > 0)
 {
 	
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 
 			//Check right tile and Animation for attacking right
-	if (place_meeting(oWorm2.x + 80, oWorm2.y, oTest) and !instance_exists(oWormBasicTimer))
+	if (place_meeting(x + 80, y, oTest) and WormAttackRight = 0 and WormAttackUp = 0 and WormAttackLeft = 0 and WormAttackDown = 0)
 					{
 						//attack windup to right
-						instance_create_depth(0, 0, 1, oWormBasicTimer);
 						WormAttackRight = 1;
+						alarm[0] = room_speed*2
 					}	
 					
 			//Attack right
-	if (WormAttackRight = 1 and global.WormAlert2 = true and Worm2Health > 0)
+	if (WormAttackRight = 1 and WormAlert2 = true and WormHealth2 > 0)
 		{
-			instance_create_layer(oWorm2.x + 80, oWorm2.y, "Effects", oDmg1);
+			instance_create_layer(x + 80, y, "Effects", oDmg1);
 			WormAttackRight = 0;
+			WormAlert2 = false;
 		}				
 					
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
 			
 			// Check tile above and animation for attacking up
-	if (place_meeting(oWorm2.x, oWorm2.y - 80, oTest) and !instance_exists(oWormBasicTimer))
+	if (place_meeting(x, y - 80, oTest) and WormAttackRight = 0 and WormAttackUp = 0 and WormAttackLeft = 0 and WormAttackDown = 0)
 					{
 						//attack windup to up
-						instance_create_depth(0, 0, 1, oWormBasicTimer);
 						WormAttackUp = 1;
+						alarm[1] = room_speed*2
 					}	
 					
 			//attack up
-	if (WormAttackUp = 1 and global.WormAlert2 = true and Worm2Health > 0)
+	if (WormAttackUp = 1 and WormAlert2 = true and WormHealth2 > 0)
 		{
-			instance_create_layer(oWorm2.x, oWorm2.y - 80, "Effects", oDmg1);
+			instance_create_layer(x, y - 80, "Effects", oDmg1);
 			WormAttackUp = 0;
+			WormAlert2 = false;
 		}		
 		
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
 
 						// Check tile left and animation for attacking left
-	if (place_meeting(oWorm2.x - 80, oWorm2.y, oTest) and !instance_exists(oWormBasicTimer))
+	if (place_meeting(x - 80, y, oTest) and WormAttackRight = 0 and WormAttackUp = 0 and WormAttackLeft = 0 and WormAttackDown = 0)
 					{
 						//attack windup to left
-						instance_create_depth(0, 0, 1, oWormBasicTimer);
 						WormAttackLeft = 1;
+						alarm[2] = room_speed*2
 					}
 			//attack left
-	if (WormAttackLeft = 1 and global.WormAlert2 = true and Worm2Health > 0)
+	if (WormAttackLeft = 1 and WormAlert2 = true and WormHealth2 > 0)
 		{
-			instance_create_layer(oWorm2.x - 80, oWorm2.y, "Effects", oDmg1);
+			instance_create_layer(x - 80, y, "Effects", oDmg1);
 			WormAttackLeft = 0;
+			WormAlert2 = false;
 		}
 		
 ////////////////////////////////////////////////////////////////////////////////////////////////////			
 		
 						// Check tile below and animation for attacking down
-	if (place_meeting(oWorm2.x, oWorm2.y + 80, oTest) and !instance_exists(oWormBasicTimer))
+	if (place_meeting(x, y + 80, oTest) and WormAttackRight = 0 and WormAttackUp = 0 and WormAttackLeft = 0 and WormAttackDown = 0)
 					{
 						//mato hyökky alas tähä
-						instance_create_depth(0, 0, 1, oWormBasicTimer);
 						WormAttackDown = 1;
+						alarm[3] = room_speed*2
 					}
 			// attack down		
-	if (WormAttackDown = 1 and global.WormAlert2 = true and Worm2Health > 0)
+	if (WormAttackDown = 1 and WormHealth2 > 0 and WormAlert2 = true)
 		{
-			instance_create_layer(oWorm2.x, oWorm2.y + 80, "Effects", oDmg1);
+			instance_create_layer(x, y + 80, "Effects", oDmg1);
 			WormAttackDown = 0;
+			WormAlert2 = false;
 		}				
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
 }
 
-if (Worm2Health = 0)
+if (WormHealth2 = 0)
 {
 	instance_destroy()
 }

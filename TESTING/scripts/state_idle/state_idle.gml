@@ -24,6 +24,12 @@ if (faceDirection = 3)
 
 if (state = states.idle)
 	{
+		
+	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign (vsp), oFallingBlock))
+		{
+			event_perform_object(oPlayer, ev_alarm, 0);
+		}
+		
 		//Collision with oHazard block kills the player 
 	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign(vsp),oHazard))
 		{
@@ -33,10 +39,5 @@ if (state = states.idle)
 		}
 						
 		else state = states.idle;
-		
-	if (place_meeting(oTest.x + sign(hsp), oTest.y + sign (vsp), oFallingBlock))
-		{
-			event_perform_object(oPlayer, ev_alarm, 0);
-		}
-				
+					
 }
