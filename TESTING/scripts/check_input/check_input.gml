@@ -7,7 +7,9 @@ if (state != states.move and state != states.dash and state != states.attack and
 		moveDirection = 0;
 		hsp = gridSize;
 		vsp = 0;
+		audio_play_sound(sfx_player_step,3,false);
 		oPlayer.state = states.move;
+		
 	}
 
 
@@ -18,7 +20,9 @@ if (state != states.move and state != states.dash and state != states.attack and
 		hsp = -gridSize;
 		vsp = 0;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
+
 
 
 	//Player movement up
@@ -28,6 +32,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		hsp = 0;
 		vsp = -gridSize;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
 
 	//Player movement down
@@ -37,6 +42,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		hsp = 0;
 		vsp = gridSize;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
 	
 		
@@ -68,7 +74,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		if (keyboard_check_pressed(vk_space) and state = states.idle) 
 		{
 			state = states.attack;
-		}
+					}
 			
 		
 	//Player ability Dash 
@@ -80,7 +86,7 @@ if (state != states.move and state != states.dash and state != states.attack and
         //Takes faceDirection and sets the direction of our dash for checking collisions
         hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
         vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);
-        state = states.dash; //sets the state to dash
+        
                            
 			   
 				   
@@ -123,8 +129,9 @@ if (state != states.move and state != states.dash and state != states.attack and
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
-		
+		state = states.dash; //sets the state to dash
 		global.dashCharge -= 1;
+		audio_play_sound(sfx_player_dash,2,false);
 		
 		if(global.dashCharge < 3)
 		{
