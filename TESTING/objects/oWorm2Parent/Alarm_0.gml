@@ -1,3 +1,4 @@
-/// @description Attack Right
+/// @description Insert description here
 // You can write your code in this editor
-WormAlert2 = true;
+
+image_speed = 1;
