@@ -8,7 +8,8 @@ if (WormHealth2 > 0)
 					{
 						//attack windup to right
 						WormAttackRight = 1;
-						alarm[0] = room_speed*2
+						sprite_index = spWorm1_attack_right;
+						alarm[0] = room_speed*2;
 					}	
 					
 			//Attack right
@@ -17,6 +18,7 @@ if (WormHealth2 > 0)
 			instance_create_layer(x + 80, y, "Effects", oDmg1);
 			WormAttackRight = 0;
 			WormAlert2 = false;
+			sprite_index = spWorm2_placeholder;
 		}				
 					
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
@@ -26,7 +28,8 @@ if (WormHealth2 > 0)
 					{
 						//attack windup to up
 						WormAttackUp = 1;
-						alarm[1] = room_speed*2
+						sprite_index = spWorm1_attack_up;
+						alarm[1] = room_speed*2;
 					}	
 					
 			//attack up
@@ -35,6 +38,7 @@ if (WormHealth2 > 0)
 			instance_create_layer(x, y - 80, "Effects", oDmg1);
 			WormAttackUp = 0;
 			WormAlert2 = false;
+			sprite_index = spWorm2_placeholder;
 		}		
 		
 ////////////////////////////////////////////////////////////////////////////////////////////////////		
@@ -44,7 +48,9 @@ if (WormHealth2 > 0)
 					{
 						//attack windup to left
 						WormAttackLeft = 1;
-						alarm[2] = room_speed*2
+						sprite_index = spWorm1_attack_left;
+						image_speed = 0.7;
+						alarm[2] = room_speed*2;
 					}
 			//attack left
 	if (WormAttackLeft = 1 and WormAlert2 = true and WormHealth2 > 0)
@@ -52,6 +58,7 @@ if (WormHealth2 > 0)
 			instance_create_layer(x - 80, y, "Effects", oDmg1);
 			WormAttackLeft = 0;
 			WormAlert2 = false;
+			sprite_index = spWorm2_placeholder;
 		}
 		
 ////////////////////////////////////////////////////////////////////////////////////////////////////			
@@ -61,7 +68,8 @@ if (WormHealth2 > 0)
 					{
 						//mato hyökky alas tähä
 						WormAttackDown = 1;
-						alarm[3] = room_speed*2
+						sprite_index = spWorm1_attack_down;
+						alarm[3] = room_speed*2;
 					}
 			// attack down		
 	if (WormAttackDown = 1 and WormHealth2 > 0 and WormAlert2 = true)
@@ -69,6 +77,7 @@ if (WormHealth2 > 0)
 			instance_create_layer(x, y + 80, "Effects", oDmg1);
 			WormAttackDown = 0;
 			WormAlert2 = false;
+			sprite_index = spWorm2_placeholder;
 		}				
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////	
