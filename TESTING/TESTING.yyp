@@ -658,7 +658,7 @@
             "Key": "7ba20f6d-0480-43d0-b3d9-44a5353b1790",
             "Value": {
                 "id": "ea4d07b6-360e-49ab-b0d8-daf110c0b6ac",
-                "resourcePath": "sprites\\spWorm1_attack_down\\spWorm1_attack_down.yy",
+                "resourcePath": "sprites\\spWorm2_attack_down\\spWorm2_attack_down.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -818,7 +818,7 @@
             "Key": "abded408-4804-4728-b1c1-4027aba347ef",
             "Value": {
                 "id": "99258c9b-7da9-4d80-9247-cb62dcaf7979",
-                "resourcePath": "sprites\\spWorm1_attack_left\\spWorm1_attack_left.yy",
+                "resourcePath": "sprites\\spWorm2_attack_left\\spWorm2_attack_left.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -954,7 +954,7 @@
             "Key": "c11ef0d4-d416-4d1e-86cc-73d6fcbcb92d",
             "Value": {
                 "id": "f278758a-eee2-4ad9-b1c9-aba2b59ddeff",
-                "resourcePath": "sprites\\spWorm1_attack_right\\spWorm1_attack_right.yy",
+                "resourcePath": "sprites\\spWorm2_attack_right\\spWorm2_attack_right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1042,7 +1042,7 @@
             "Key": "dcf079c4-93cd-4bc4-a586-86d9b38fc2ed",
             "Value": {
                 "id": "f8c0b992-7a0d-4572-9770-0e48d61e6086",
-                "resourcePath": "sprites\\spWorm1_attack_up\\spWorm1_attack_up.yy",
+                "resourcePath": "sprites\\spWorm2_attack_up\\spWorm2_attack_up.yy",
                 "resourceType": "GMSprite"
             }
         },
