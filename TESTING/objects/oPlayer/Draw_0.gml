@@ -11,5 +11,5 @@ draw_text(0,0,"x:" + string(x)
 + "\nDashCharge:" + string(global.dashCharge)
 + "\nImage_index:" + string(image_index))
 
-draw_text(400,0,"canAttack:" + string(canAttack))
+draw_text(400,0,"canAttack:" + string(global.canAttack))
 

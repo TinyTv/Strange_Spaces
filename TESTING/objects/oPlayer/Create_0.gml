@@ -13,7 +13,7 @@ depth = -2
 playerHealth = 1
 playerHealth = 1;
 
-canAttack = true;
+global.canAttack = true;
 attacking = false;
 
 hsp = 0;

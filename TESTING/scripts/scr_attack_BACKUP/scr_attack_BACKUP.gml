@@ -10,7 +10,7 @@ if(global.canAttack = true)
 				//Attack right
 				instance_create_layer(x+80,y,"Bullets",oBullet);
 				sprite_index = spPlayer_attack_right;
-				
+				image_speed = 0.7;
 			}
 	
 	
@@ -19,7 +19,7 @@ if(global.canAttack = true)
 				//Attack up
 				instance_create_layer(x,y-80,"Bullets",oBullet);
 				sprite_index = spPlayer_attack_up;
-				
+				image_speed = 0.7;
 			}
 	
 	
@@ -28,7 +28,7 @@ if(global.canAttack = true)
 				//Attack left
 				instance_create_layer(x-80,y,"Bullets",oBullet);
 				sprite_index = spPlayer_attack_left;
-				
+				image_speed = 0.7;
 			}
 	
 
@@ -37,6 +37,6 @@ if(global.canAttack = true)
 				//Attack down
 				instance_create_layer(x,y+80,"Bullets",oBullet);
 				sprite_index = spPlayer_attack_down;
-				
+				image_speed = 0.7;
 			}
 }

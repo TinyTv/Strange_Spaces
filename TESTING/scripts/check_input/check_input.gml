@@ -69,12 +69,11 @@ if (state != states.move and state != states.dash and state != states.attack and
 	}
 	
 	
-	//Attacking	- if key is pressed execute attack script
-		
-		if (keyboard_check_pressed(vk_space) and state = states.idle) 
-		{
-			state = states.attack;
-		}
+	//Attacking		
+	if (keyboard_check_pressed(vk_space) and state = states.idle) 
+	{
+		state = states.attack;
+	}
 			
 		
 	//Player ability Dash 
