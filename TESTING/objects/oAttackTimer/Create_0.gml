@@ -1,4 +1,4 @@
-alarm[0] = room_speed*0.5;
+alarm[0] = 36;
 global.canAttack = false;
 
 

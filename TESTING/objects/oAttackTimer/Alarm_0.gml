@@ -1,6 +1,6 @@
 //Destroy the bullet
-instance_destroy(oBullet);
+//instance_destroy(oBullet);
 
-global.canAttack = true;
+oPlayer.canAttack = true;
 instance_destroy();
 oPlayer.state = states.idle;

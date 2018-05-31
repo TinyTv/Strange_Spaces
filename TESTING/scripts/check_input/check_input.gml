@@ -74,7 +74,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		if (keyboard_check_pressed(vk_space) and state = states.idle) 
 		{
 			state = states.attack;
-					}
+		}
 			
 		
 	//Player ability Dash 

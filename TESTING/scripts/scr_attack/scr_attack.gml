@@ -1,42 +1,129 @@
-if(global.canAttack = true)
-{			
+//if(global.canAttack = true)
+//{			
 
-		instance_create_depth(0,0,1,oAttackTimer);
-		audio_play_sound(sfx_player_attack,1,false);
+		//instance_create_depth(0,0,1,oAttackTimer);
+		
+		/*   THIS IS WORM CODE DO NOT TOUCH
+		if (place_meeting(x + 80, y, oTest) and isAttacking = false)
+		{
+			//change sprite and reset imageindex
+			isAttacking  = true;
+			sprite_index = spWorm1_attack_right;
+			depth = -100;
+			image_index = 0;
+		}	
+		
+		//Attack
+		if(isAttacking = true and sprite_index = spWorm1_attack_right)
+		{
+			if (image_index = 11)
+				{
+				instance_create_layer(x + 80, y, "Effects", oDmg1);
+				audio_play_sound(sfx_worm_bite,2,false);
+				}
+				
+			if (image_index = 22)
+				{
+				isAttacking = false;
+				sprite_index = spWorm2_idle_right;
+				depth = 2;
+				}		
+		}
+		
+		THIS IS WORM CODE DO NOT TOUCH  */
+		
 		
 		//Take faceDirection, create object oBullet on the next grid from the oPlayer
-		if (faceDirection = 0)
+		if (faceDirection = 0 and canAttack = true)
 			{
 				//Attack right
-				instance_create_layer(x+80,y,"Bullets",oBullet);
+				
 				sprite_index = spPlayer_attack_right;
-				image_speed = 0.7;
+				canAttack = false;
+				attacking = true;
+				audio_play_sound(sfx_player_attack,1,false);	
+				
 			}
+			
+			
+				if (image_index = 10 and faceDirection = 0 and attacking = true)
+				{
+					instance_create_layer(x+80,y,"Bullets",oBullet);
+			
+					
+				}
+				
+			
+				
+				
+				
+				
+				
+			
+			
+	
+		////Attacking up
+		//if (faceDirection = 1)
+		//	{
+		//		//attack up
+		//		sprite_index = spPlayer_attack_up;
+		//		attacking = true;
+				
+		//		if (image_index = 10)
+		//		{
+		//			instance_create_layer(x+80,y,"Bullets",oBullet);
+		//		}
+				
+		//		if (image_index = 18)
+		//		{
+		//			state = states.idle;
+		//			canAttack = false;
+		//		}
+		//	}
 	
 	
-		if (faceDirection = 1)
-			{
-				//Attack up
-				instance_create_layer(x,y-80,"Bullets",oBullet);
-				sprite_index = spPlayer_attack_up;
-				image_speed = 0.7;
-			}
-	
-	
-		if (faceDirection = 2) 
-			{
-				//Attack left
-				instance_create_layer(x-80,y,"Bullets",oBullet);
-				sprite_index = spPlayer_attack_left;
-				image_speed = 0.7;
-			}
+		//if (faceDirection = 2) 
+		//	{	
+		//		//attack left
+		//		sprite_index = spPlayer_attack_left;
+		//		attacking = true;
+				
+		//		if (image_index = 10)
+		//		{
+		//			instance_create_layer(x+80,y,"Bullets",oBullet);
+		//		}
+				
+		//		if (image_index = 18)
+		//		{
+		//			state = states.idle;
+		//			canAttack = false;
+		//		}
+		//	}
 	
 
-		if (faceDirection = 3)
-			{
-				//Attack down
-				instance_create_layer(x,y+80,"Bullets",oBullet);
-				sprite_index = spPlayer_attack_down;
-				image_speed = 0.7;
-			}
-}
+		//if (faceDirection = 3)
+		//	{
+		//		//attack down
+		//		sprite_index = spPlayer_attack_down;
+		//		attacking = true;
+				
+		//		if (image_index = 10)
+		//		{
+		//			instance_create_layer(x+80,y,"Bullets",oBullet);
+		//		}
+				
+		//		if (image_index = 18)
+		//		{
+		//			state = states.idle;
+		//			canAttack = false;
+		//		}
+		//	}
+//}
+
+	if (image_index = 17)
+	{
+		canAttack = true;			
+		attacking = false;
+		state = states.idle;
+	}
+				

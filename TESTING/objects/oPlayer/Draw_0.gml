@@ -8,7 +8,8 @@ draw_text(0,0,"x:" + string(x)
 + "\nmoveDirection:" + string(moveDirection)
 + "\nfaceDirection:" + string(faceDirection)
 + "\nState:" + string(state)
-+ "\nDashCharge:" + string(global.dashCharge))
++ "\nDashCharge:" + string(global.dashCharge)
++ "\nImage_index:" + string(image_index))
 
-draw_text(400,0,"attack Timer:" + string(global.canAttack))
+draw_text(400,0,"canAttack:" + string(canAttack))
 
