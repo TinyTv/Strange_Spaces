@@ -1,7 +1,7 @@
 /// @description normal attack Worm
 WormHealth2 = 3;
+WormAlert2 = false;
 
 isAttacking = false;
 
-depth = 2;
-image_speed = 1;
+depth = 2; 
