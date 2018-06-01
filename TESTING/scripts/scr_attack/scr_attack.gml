@@ -1,42 +1,79 @@
 if(global.canAttack = true)
-{			
-
+{
+		
+		
 		instance_create_depth(0,0,1,oAttackTimer);
-		audio_play_sound(sfx_player_attack,1,false);
+		image_index = 0;
 		
 		//Take faceDirection, create object oBullet on the next grid from the oPlayer
+		//RIGHT
 		if (faceDirection = 0)
 			{
-				//Attack right
-				instance_create_layer(x+80,y,"Bullets",oBullet);
 				sprite_index = spPlayer_attack_right;
-				image_speed = 0.7;
-			}
-	
-	
+				audio_play_sound(sfx_player_attack,1,false);				
+			}			
+			
+			//UP
 		if (faceDirection = 1)
 			{
-				//Attack up
-				instance_create_layer(x,y-80,"Bullets",oBullet);
+				
 				sprite_index = spPlayer_attack_up;
-				image_speed = 0.7;
+				audio_play_sound(sfx_player_attack,1,false);
+				
 			}
 	
-	
+		//LEFT
 		if (faceDirection = 2) 
 			{
-				//Attack left
-				instance_create_layer(x-80,y,"Bullets",oBullet);
+				
 				sprite_index = spPlayer_attack_left;
-				image_speed = 0.7;
+				audio_play_sound(sfx_player_attack,1,false);
+				
 			}
 	
-
+		//DOWN
 		if (faceDirection = 3)
 			{
-				//Attack down
-				instance_create_layer(x,y+80,"Bullets",oBullet);
+				
 				sprite_index = spPlayer_attack_down;
-				image_speed = 0.7;
+				audio_play_sound(sfx_player_attack,1,false);
+				
 			}
+			
+
+			
 }
+
+if (!instance_exists(oBullet))
+{
+	if (image_index = image_number - 7)
+	{
+		//RIGHT
+		if (faceDirection = 0)
+		{
+		instance_create_layer(x+80,y,"Bullets",oBullet);
+		}
+	
+		//UP
+		if(faceDirection = 1)
+		{
+		instance_create_layer(x,y-80,"Bullets",oBullet);
+		}
+	
+		//LEFT
+		if(faceDirection = 2)
+		{
+		instance_create_layer(x-80,y,"Bullets",oBullet);
+		}
+	
+		//DOWN
+		if(faceDirection = 3)
+		{
+		instance_create_layer(x,y+80,"Bullets",oBullet);
+		}
+	}
+}
+
+			
+	
+	

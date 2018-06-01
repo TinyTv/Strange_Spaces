@@ -1,3 +1,4 @@
+
 //Idle animations
 // Change sprite based on what direction we're facing
 if (faceDirection = 2) 
@@ -38,6 +39,5 @@ if (state = states.idle)
 	
 		}
 						
-		else state = states.idle;
-					
+		else state = states.idle;					
 }
