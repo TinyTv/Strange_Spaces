@@ -14,13 +14,13 @@ if (WormHealth2 > 0)
 		//Attack
 		if(isAttacking = true and sprite_index = spWorm1_attack_right)
 		{
-			if (image_index = 11)
+			if (image_index = image_number - 11)
 				{
 				instance_create_layer(x + 80, y, "Effects", oDmg1);
 				audio_play_sound(sfx_worm_bite,2,false);
 				}
 				
-			if (image_index = 22)
+			if (image_index = image_number - 2)
 				{
 				isAttacking = false;
 				sprite_index = spWorm2_idle_right;
@@ -43,13 +43,13 @@ if (WormHealth2 > 0)
 		//Attack left
 		if(isAttacking = true and sprite_index = spWorm1_attack_left)
 		{
-		if (image_index = 11)
+		if (image_index = image_number - 11)
 		{
 			instance_create_layer(x - 80, y, "Effects", oDmg1);	
 			audio_play_sound(sfx_worm_bite,2,false);
 		}	
 					
-		if (image_index = 22)
+		if (image_index = image_number - 2)
 			{
 			isAttacking = false;
 			sprite_index = spWorm2_idle_left;
@@ -69,16 +69,16 @@ if (WormHealth2 > 0)
 			image_index = 0;
 		}	
 		
-		//Attack left
+		//Attack up
 		if(isAttacking = true and sprite_index = spWorm1_attack_up)
 		{
-		if (image_index = 11)
+		if (image_index = image_number - 11)
 		{
 			instance_create_layer(x, y-80, "Effects", oDmg1);
 			audio_play_sound(sfx_worm_bite,2,false);
 		}
 					
-		if (image_index = 22)
+		if (image_index = image_number - 2)
 			{
 			isAttacking = false;
 			sprite_index = spWorm2_idle_up;
@@ -101,13 +101,13 @@ if (WormHealth2 > 0)
 		//Attack left
 		if(isAttacking = true and sprite_index = spWorm1_attack_down)
 		{
-		if (image_index = 11)
+		if (image_index = image_number - 11)
 		{
 			instance_create_layer(x, y+80, "Effects", oDmg1);
 			audio_play_sound(sfx_worm_bite,2,false);
 		}
 					
-		if (image_index = 22)
+		if (image_index = image_number - 2)
 			{
 			isAttacking = false;
 			sprite_index = spWorm2_idle_down;
@@ -116,7 +116,7 @@ if (WormHealth2 > 0)
 		
 }
 
-if (WormHealth2 = 0)
+if (WormHealth2 <= 0)
 {
 	instance_destroy()
 }
