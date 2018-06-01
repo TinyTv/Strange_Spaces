@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "e03c7081-7dbe-44b0-9d9e-bbca4fedccd7",
+            "Value": {
+                "id": "780fd888-501a-4c24-9ab2-55be87b0c6da",
+                "resourcePath": "scripts\\scr_attack_BACKUP\\scr_attack_BACKUP.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5bec97c-bb4f-43ae-b900-fba0842de8cf",
             "Value": {
                 "id": "dcf5a0c6-c8a1-4721-b239-d72b4ca651b2",
@@ -1176,7 +1184,8 @@
         "4c7fe4e4-78f8-4535-9583-3cf59cd333f6",
         "7d679d1a-124c-4cb0-bf15-0611ce2210ff",
         "56c89d8e-36e9-4d1b-9bea-1d7900ec6f95",
-        "5650b315-59bf-413b-9294-6f8efb5a6c1e"
+        "5650b315-59bf-413b-9294-6f8efb5a6c1e",
+        "e03c7081-7dbe-44b0-9d9e-bbca4fedccd7"
     ],
     "tutorial": ""
 }
