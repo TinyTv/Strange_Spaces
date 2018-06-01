@@ -4,6 +4,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Player Movement right
 	if (keyboard_check_pressed(ord("D")))
 	{
+		image_index = 0;
 		moveDirection = 0;
 		hsp = gridSize;
 		vsp = 0;
@@ -15,6 +16,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Player movement left
 		if (keyboard_check_pressed(ord("A")))
 	{
+		image_index = 0;
 		moveDirection = 2;
 		hsp = -gridSize;
 		vsp = 0;
@@ -27,6 +29,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Player movement up
 	if (keyboard_check_pressed(ord("W")))
 	{
+		image_index = 0;
 		moveDirection = 1;
 		hsp = 0;
 		vsp = -gridSize;
@@ -37,6 +40,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Player movement down
 	if (keyboard_check_pressed(ord("S")))
 	{ 
+		image_index = 0;
 		moveDirection = 3;
 		hsp = 0;
 		vsp = gridSize;
