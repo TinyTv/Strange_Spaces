@@ -1,7 +1,7 @@
 gridSize = 80;
-moveSpeed = 8;
+moveSpeed = 6;
 dashDistance = 2; //dash moves the object 2 units (grids)
-dashSpeed = 40; 
+dashSpeed = 10; 
 global.dashCharge = 3;
 
 //Snaps oPlayer to grid

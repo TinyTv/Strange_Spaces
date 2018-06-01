@@ -114,8 +114,7 @@ if (state != states.move and state != states.dash and state != states.attack and
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   } 
-			  
+			   } 	  
 			   
 			   
             //Worm2 dash collision
@@ -168,7 +167,18 @@ if (state != states.move and state != states.dash and state != states.attack and
 					state = states.idle;
 					hsp = 0;
 					vsp = 0; 	
-				}			
+				}
+				
+				
+		//THIS IS FOR TESTING COLLISION BOXES		
+		if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oDAMAGETEST))
+				{
+						//if colliding, set state to idle and reset horizontal & vertical speeds
+					state = states.death;
+					hsp = 0;
+					vsp = 0; 	
+				}	
+				
 	}
 			
 	//Collision with oHazard block kills the player 
