@@ -1,8 +1,9 @@
 if(global.canAttack = true)
 {
 		
-		instance_create_depth(0,0,1,oAttackTimer);
 		
+		instance_create_depth(0,0,1,oAttackTimer);
+		image_index = 0;
 		
 		//Take faceDirection, create object oBullet on the next grid from the oPlayer
 		//RIGHT
@@ -38,6 +39,8 @@ if(global.canAttack = true)
 				audio_play_sound(sfx_player_attack,1,false);
 				
 			}
+			
+
 			
 }
 			

@@ -8,8 +8,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		hsp = gridSize;
 		vsp = 0;
 		audio_play_sound(sfx_player_step,3,false);
-		oPlayer.state = states.move;
-		
+		oPlayer.state = states.move;		
 	}
 
 
