@@ -1,5 +1,10 @@
 if (WormHealth2 > 0)
 {	
+	if(!instance_exists(oPlayer))
+		{
+		isAttacking = false;
+		sprite_index = spWorm2_idle_down;
+		}
 	
 	//Attacking right
 	//Check right tile and Animation for attacking right
@@ -23,9 +28,9 @@ if (WormHealth2 > 0)
 				
 		if (image_index = image_number - 2)
 			{
-			isAttacking = false;
 			sprite_index = spWorm2_idle_right;
 			depth = 2;
+			isAttacking = false;
 			}		
 	}
 		
@@ -44,18 +49,18 @@ if (WormHealth2 > 0)
 	//Attack left
 	if(isAttacking = true and sprite_index = spWorm1_attack_left)
 	{
-	if (image_index = image_number - 11)
-	{
-		instance_create_layer(x - 80, y, "Effects", oDmg1);	
-		audio_play_sound(sfx_worm_bite,2,false);
-	}	
+		if (image_index = image_number - 11)
+			{
+			instance_create_layer(x - 80, y, "Effects", oDmg1);	
+			audio_play_sound(sfx_worm_bite,2,false);
+			}	
 					
-	if (image_index = image_number - 2)
-		{
-		isAttacking = false;
-		sprite_index = spWorm2_idle_left;
-		depth = 2;
-		}		
+		if (image_index = image_number - 2)
+			{
+			isAttacking = false;
+			sprite_index = spWorm2_idle_left;
+			depth = 2;
+			}		
 	}
 
 
@@ -73,18 +78,18 @@ if (WormHealth2 > 0)
 	//Attack up
 	if(isAttacking = true and sprite_index = spWorm1_attack_up)
 	{
-	if (image_index = image_number - 11)
-	{
-		instance_create_layer(x, y-80, "Effects", oDmg1);
-		audio_play_sound(sfx_worm_bite,2,false);
-	}
+		if (image_index = image_number - 11)
+			{
+			instance_create_layer(x, y-80, "Effects", oDmg1);
+			audio_play_sound(sfx_worm_bite,2,false);
+			}
 					
-	if (image_index = image_number - 2)
-		{
-		isAttacking = false;
-		sprite_index = spWorm2_idle_up;
-		depth = 2;
-		}		
+		if (image_index = image_number - 2)
+			{
+			isAttacking = false;
+			sprite_index = spWorm2_idle_up;
+			depth = 2;
+			}		
 	}
 			
 	//Attacking down
@@ -100,27 +105,22 @@ if (WormHealth2 > 0)
 	//Attack down
 	if(isAttacking = true and sprite_index = spWorm1_attack_down)
 	{
-	if (image_index = image_number - 11)
-	{
-		instance_create_layer(x, y+80, "Effects", oDmg1);
-		audio_play_sound(sfx_worm_bite,2,false);
-	}
+		if (image_index = image_number - 11)
+			{
+			instance_create_layer(x, y+80, "Effects", oDmg1);
+			audio_play_sound(sfx_worm_bite,2,false);
+			}
 					
-	if (image_index = image_number - 2)
-		{
-		isAttacking = false;
-		sprite_index = spWorm2_idle_down;
-		}
-		
-	else if(!instance_exists(oPlayer))
-		{
+		if (image_index = image_number - 2)
+			{
 			isAttacking = false;
 			sprite_index = spWorm2_idle_down;
-		}
-	
+			}
 	}
-
+	
 }
+
+
 
 if (WormHealth2 <= 0)
 {
