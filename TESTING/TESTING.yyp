@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "13ec8114-6079-46d6-93a2-7f77110b7505",
+            "Value": {
+                "id": "744ba2ca-8db1-4400-9f85-1c4d9df00dba",
+                "resourcePath": "tilesets\\detailTiles2\\detailTiles2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "149a204f-da68-4eac-b923-97133ad0199e",
             "Value": {
                 "id": "6b73518b-0fa5-4941-acbb-e681de6519a0",
@@ -388,6 +396,14 @@
                 "id": "2478ac50-60a3-44dc-8722-cf627c95fffd",
                 "resourcePath": "objects\\oHazard\\oHazard.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "441414f7-6f94-45e6-9ae3-346640f2f36a",
+            "Value": {
+                "id": "42c0a739-4eb6-4a6a-8a58-e884d45d38e6",
+                "resourcePath": "sprites\\spTileset_final\\spTileset_final.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1079,6 +1095,14 @@
             }
         },
         {
+            "Key": "d5d28ca3-332f-4b3d-a662-7943a5981db1",
+            "Value": {
+                "id": "5117da30-6e70-4b36-83d8-34232e51608a",
+                "resourcePath": "sprites\\spTileset_foreground\\spTileset_foreground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d73ea105-3f11-4a1a-a7c5-dd82fd50988e",
             "Value": {
                 "id": "cdc146d7-63b8-4fcd-83f1-cb8a402edb4f",
@@ -1163,6 +1187,14 @@
             "Value": {
                 "id": "b7b57f74-e8b3-4ab8-94ae-b40f2a08c23d",
                 "resourcePath": "tilesets\\basicTiles2\\basicTiles2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "f2770146-1a85-46b8-a03a-8f4e177bf126",
+            "Value": {
+                "id": "3799d7dd-ed52-40c1-ace3-ff888e811e6e",
+                "resourcePath": "tilesets\\foregroundTiles\\foregroundTiles.yy",
                 "resourceType": "GMTileSet"
             }
         },

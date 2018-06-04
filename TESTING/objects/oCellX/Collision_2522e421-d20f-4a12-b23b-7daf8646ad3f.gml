@@ -6,6 +6,3 @@ if (timer <= 0)
 	oPlayer.state = states.death;
 	timer = maxTimer;
 }
-
-
-

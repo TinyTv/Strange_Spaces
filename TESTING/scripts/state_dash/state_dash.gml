@@ -2,7 +2,7 @@
 
 oPlayer.visible = false;
 if (!instance_exists(oPlayer_dash))
-instance_create_layer(x,y,"Instances",oPlayer_dash);
+instance_create_layer(x,y,"Player",oPlayer_dash);
 
 
 /*
