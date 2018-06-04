@@ -12,7 +12,8 @@
         "1315fd4e-a901-4da3-a0eb-0bfa9b5fbdd6",
         "107bf63e-6309-4f75-9846-4672feef22ff",
         "5a43b250-419d-4720-b187-abd0945b0fab",
-        "083eab18-880c-4c90-b177-a9042f3df63a"
+        "083eab18-880c-4c90-b177-a9042f3df63a",
+        "85d75c5b-1708-4592-ab18-eed9d63eca1c"
     ],
     "filterType": "GMObject",
     "folderName": "Invisible",
