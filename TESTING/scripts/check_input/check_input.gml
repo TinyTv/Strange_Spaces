@@ -48,8 +48,7 @@ if (state != states.move and state != states.dash and state != states.attack and
 		audio_play_sound(sfx_player_step,3,false);
 	}
 	
-		
-	
+/*	
 	//Turning faceDirection left 90 degrees
 	if (keyboard_check_pressed(vk_left))
 	{ 
@@ -69,6 +68,34 @@ if (state != states.move and state != states.dash and state != states.attack and
 		{
 			faceDirection = 3;
 		}
+	}
+*/
+
+	
+//KEY = FACE DIRECTION CHANGE	
+	//Face right
+	if (keyboard_check_pressed(vk_right))
+	{ 
+		faceDirection = 0;
+	}
+	
+		//Face left
+	if (keyboard_check_pressed(vk_left))
+	{ 
+		faceDirection = 2;
+	}
+	
+	//Face up
+	if (keyboard_check_pressed(vk_up))
+	{ 
+		faceDirection = 1;
+	}
+	
+	//KEY = FACE DIRECTION CHANGE	
+	//Turning faceDirection right 90 degrees
+	if (keyboard_check_pressed(vk_down))
+	{ 
+		faceDirection = 3;
 	}
 	
 	
