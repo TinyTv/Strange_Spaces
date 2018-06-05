@@ -1,3 +1,5 @@
+room_restart();
+/*
 //Snaps to coordinates
 x = round(oSpawn.x / oSpawn.gridSize) * oSpawn.gridSize;
 y = round(oSpawn.y / oSpawn.gridSize) * oSpawn.gridSize;
