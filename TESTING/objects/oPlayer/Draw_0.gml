@@ -1,5 +1,6 @@
 draw_self()
 
+/*
 draw_text(0,0,"x:" + string(x)
 + "\ny:" + string(y)
 + "\nhsp:" + string(hsp)

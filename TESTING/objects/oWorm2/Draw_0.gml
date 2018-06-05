@@ -3,7 +3,7 @@
 
 
 draw_self()
-
+/*
 draw_text(x+90,y, + string(image_index)
 + "\nimagenumber:" + string(image_number)
 + "\nHP:" + string(WormHealth2)
