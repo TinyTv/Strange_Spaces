@@ -64,7 +64,7 @@
         "ee6717e6-d3a2-45d8-a550-267ff648c101",
         "a791e7fc-28cb-44ab-ba74-def1d46e476e",
         "9f20a73d-7c78-4525-94a6-8b26788cbd9a",
-        "6f6e7779-d362-4ebb-85cb-be06116843e8"
+        "3f822541-efa7-4238-b219-e8c144e48e06"
     ],
     "IsDnD": false,
     "layers": [
@@ -174,8 +174,8 @@
             "name": "Enemies",
             "id": "a5aa0cdb-1292-421a-a075-ded1c348f5dc",
             "depth": 300,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 80,
+            "grid_y": 80,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -183,7 +183,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_6974817D","id": "3f822541-efa7-4238-b219-e8c144e48e06","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6974817D","objId": "252dc0e0-ccff-457f-b176-7085078f692d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 720,"y": 560}
             ],
             "layers": [
 
