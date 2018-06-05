@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0670c817-f24a-4379-8dff-c4d83ec85cf3",
+            "Value": {
+                "id": "a9504dbd-e994-4a1d-96b3-2665b064fe7f",
+                "resourcePath": "sprites\\spFallingBlock_stable\\spFallingBlock_stable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08076233-be39-4e3f-b6c5-545a85c2bb1a",
             "Value": {
                 "id": "ccf2d538-d104-46c0-a507-db2cbd87e1db",
@@ -503,14 +511,6 @@
             }
         },
         {
-            "Key": "549d20b6-ebcd-4859-8a65-32891bdaa8dc",
-            "Value": {
-                "id": "3f52ed33-9d0d-478e-a801-0f50b81cae47",
-                "resourcePath": "sprites\\sprite52\\sprite52.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "561d8add-2a63-4882-b56d-c47d69228976",
             "Value": {
                 "id": "59b01622-1a84-4d29-85ee-787035ab3dec",
@@ -700,14 +700,6 @@
                 "id": "00af6ffe-91d1-4fa8-a4ed-93907708acaa",
                 "resourcePath": "sprites\\spPlayer_idle_right\\spPlayer_idle_right.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7312bddf-f6e5-4970-81b5-22c9c5b7605c",
-            "Value": {
-                "id": "64ec5de1-22d0-4693-8ed0-c6e9fb9536fe",
-                "resourcePath": "tilesets\\basicTiles\\basicTiles.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1055,14 +1047,6 @@
             }
         },
         {
-            "Key": "bdd52762-d9dd-495a-a6ae-07bd117bd617",
-            "Value": {
-                "id": "d33b95d0-a6ad-4775-9ec1-2a0aea2a4e65",
-                "resourcePath": "sprites\\sprite51\\sprite51.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c05b9288-2fa9-42e7-a82a-1d0b75c53de1",
             "Value": {
                 "id": "ac2ff3e8-3132-46d3-b525-4d9d2c1d3c40",
@@ -1236,14 +1220,6 @@
                 "id": "079be6ed-4708-42a4-bc41-eec3114919b7",
                 "resourcePath": "views\\f147b577-843d-4e53-9b6f-af9d02147041.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f18b2135-c40e-4d01-9da9-f86ffe59a32e",
-            "Value": {
-                "id": "b7b57f74-e8b3-4ab8-94ae-b40f2a08c23d",
-                "resourcePath": "tilesets\\basicTiles2\\basicTiles2.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
