@@ -83,7 +83,7 @@ if (WormHealth2 > 0)
 		{
 		isAttacking = false;
 		sprite_index = spWorm2_idle_up;
-		depth = 2;
+		depth = -100;
 		}		
 	}
 			
