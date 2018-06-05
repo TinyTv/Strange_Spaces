@@ -9,6 +9,7 @@ x = round(x / gridSize) * gridSize;
 y = round(y / gridSize) * gridSize;
 
 depth = -2
+visible = true;
 
 playerHealth = 1
 playerHealth = 1;

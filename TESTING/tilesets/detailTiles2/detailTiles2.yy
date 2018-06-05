@@ -17,7 +17,7 @@
     "out_columns": 16,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "441414f7-6f94-45e6-9ae3-346640f2f36a",
+    "spriteId": "8752bcce-7a80-4864-9dd8-cbd306b803e4",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {

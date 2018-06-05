@@ -40,3 +40,9 @@ if(instance_exists(oPlayer))
 		}
 		else { speed = 0 }
 	}
+	
+
+
+
+if (!instance_exists(oPlayer))
+playingSound = false;

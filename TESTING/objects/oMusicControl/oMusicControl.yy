@@ -5,7 +5,7 @@
     "name": "oMusicControl",
     "eventList": [
         {
-            "id": "d24951e3-e02c-4d88-9eb2-b47877a8cdf1",
+            "id": "4a4f6f15-7f5d-45a1-a780-8f88bf7e263a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
