@@ -4,39 +4,48 @@ if (state != states.move and state != states.dash and state != states.attack and
 	//Player Movement right
 	if (keyboard_check_pressed(ord("D")))
 	{
+		image_index = 0;
 		moveDirection = 0;
 		hsp = gridSize;
 		vsp = 0;
-		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
+		oPlayer.state = states.move;		
 	}
 
 
 	//Player movement left
 		if (keyboard_check_pressed(ord("A")))
 	{
+		image_index = 0;
 		moveDirection = 2;
 		hsp = -gridSize;
 		vsp = 0;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
+
 
 
 	//Player movement up
 	if (keyboard_check_pressed(ord("W")))
 	{
+		image_index = 0;
 		moveDirection = 1;
 		hsp = 0;
 		vsp = -gridSize;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
 
 	//Player movement down
 	if (keyboard_check_pressed(ord("S")))
 	{ 
+		image_index = 0;
 		moveDirection = 3;
 		hsp = 0;
 		vsp = gridSize;
 		oPlayer.state = states.move;
+		audio_play_sound(sfx_player_step,3,false);
 	}
 	
 		
@@ -63,12 +72,11 @@ if (state != states.move and state != states.dash and state != states.attack and
 	}
 	
 	
-	//Attacking	- if key is pressed execute attack script
-		
-		if (keyboard_check_pressed(vk_space) and state = states.idle) 
-		{
-			state = states.attack;
-		}
+	//Attacking		
+	if (keyboard_check_pressed(vk_space) and state = states.idle) 
+	{
+		state = states.attack;
+	}
 			
 		
 	//Player ability Dash 
@@ -80,7 +88,7 @@ if (state != states.move and state != states.dash and state != states.attack and
         //Takes faceDirection and sets the direction of our dash for checking collisions
         hsp = lengthdir_x(dashDistance * gridSize, faceDirection * 90);
         vsp = lengthdir_y(dashDistance * gridSize, faceDirection * 90);
-        state = states.dash; //sets the state to dash
+        
                            
 			   
 				   
@@ -106,8 +114,7 @@ if (state != states.move and state != states.dash and state != states.attack and
                 {
                     tempDashDistance = i; // If there's a wall before we can finish dashing, shorten the dash distance (using temporary variable)
 					break;
-			   } 
-			  
+			   } 	  
 			   
 			   
             //Worm2 dash collision
@@ -123,8 +130,9 @@ if (state != states.move and state != states.dash and state != states.attack and
 		//Set hsp and vsp again and dash
         hsp = lengthdir_x(tempDashDistance * gridSize, faceDirection * 90);
         vsp = lengthdir_y(tempDashDistance * gridSize, faceDirection * 90);
-		
+		state = states.dash; //sets the state to dash
 		global.dashCharge -= 1;
+		audio_play_sound(sfx_player_dash,2,false);
 		
 		if(global.dashCharge < 3)
 		{
@@ -159,7 +167,18 @@ if (state != states.move and state != states.dash and state != states.attack and
 					state = states.idle;
 					hsp = 0;
 					vsp = 0; 	
-				}			
+				}
+				
+				
+		//THIS IS FOR TESTING COLLISION BOXES		
+		if (place_meeting(oTest.x + sign(hsp),oTest.y + sign(vsp),oDAMAGETEST))
+				{
+						//if colliding, set state to idle and reset horizontal & vertical speeds
+					state = states.death;
+					hsp = 0;
+					vsp = 0; 	
+				}	
+				
 	}
 			
 	//Collision with oHazard block kills the player 

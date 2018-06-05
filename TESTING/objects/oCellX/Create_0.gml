@@ -9,3 +9,4 @@ timer = maxTimer;
 waitTime = 0
 
 returnHome = false
+playingSound = false;

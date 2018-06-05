@@ -1,8 +1,8 @@
 /// @description normal attack Worm
 WormHealth2 = 3;
-WormAlert2 = false;
 
-WormAttackLeft = 0;
-WormAttackRight = 0;
-WormAttackUp = 0;
-WormAttackDown = 0;
+isAttacking = false;
+sprite_index = spWorm2_idle_left;
+
+depth = 2; 
+image_speed = 1;

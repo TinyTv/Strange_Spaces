@@ -1,5 +1,11 @@
 //DO NOT TOUCH
 
+oPlayer.visible = false;
+if (!instance_exists(oPlayer_dash))
+instance_create_layer(x,y,"Player",oPlayer_dash);
+
+
+/*
 //Dash animations
 // Change sprite based on what direction we're facing
 if (faceDirection = 2) 
@@ -22,7 +28,7 @@ if (faceDirection = 3)
 {
 	sprite_index = spPlayer_dash_down;
 }
-	
+*/	
 
 //Check stuff?!
 if(hsp!=0)  //If hsp is NOT 0:
