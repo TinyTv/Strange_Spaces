@@ -439,14 +439,6 @@
             }
         },
         {
-            "Key": "44fc0203-e844-4e0f-82d4-ebd14f661779",
-            "Value": {
-                "id": "3bd32b7c-3f06-4ff5-928f-498b4d7b7e90",
-                "resourcePath": "sprites\\spCellY\\spCellY.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "45b31585-3775-42d3-9b6e-4c5d953c464a",
             "Value": {
                 "id": "3f2d7509-f5a2-40b7-879a-265a35ce4aa3",
