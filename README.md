@@ -5,7 +5,7 @@ The project was done inbetween lessons during 3 months by a team of 2-6 people. 
 The programming and assembling of the demo project was done mostly during the last 3 weeks of Pelifarmi.
 Strange Spaces was released with several major bugs - our lead programmer is working on fixing them on her spare time. 
 
-The current executable (preview_001) is meant to be used for portfolio work and demonstration ONLY. 
+The current executable (preview_001) is meant to be used for portfolio work and demonstration ONLY. You can download the zip from the TESTING folder (which is the Gamemaker project folder).
 It is not to be released elsewhere for commercial use.
 
 The team:
