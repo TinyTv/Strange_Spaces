@@ -2,6 +2,7 @@
 
 This is the gitHub repository for Strange Spaces, a student project for the Pelifarmi project. 
 The project was done inbetween lessons during 3 months by a team of 2-6 people. (The team started with 2 people, then grew later on).
+The team had no prior experience in game development. 
 The programming and assembling of the demo project was done mostly during the last 3 weeks of Pelifarmi.
 Strange Spaces was released with several major bugs - our lead programmer is working on fixing them on her spare time. 
 
