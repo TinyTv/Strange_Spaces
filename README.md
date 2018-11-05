@@ -9,7 +9,7 @@ The current executable (preview_001) is meant to be used for portfolio work and 
 It is not to be released elsewhere for commercial use.
 
 The team:
-Milla - lead programmer, producer, team leader
+Milla - lead programmer, producer, team leader, audio
 Tuomas - designer, lead artist (player character, base environment)
 Ivan - designer, artist (enemy art and animation, environmental details)
 
